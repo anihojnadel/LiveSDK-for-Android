@@ -24,7 +24,7 @@ package com.microsoft.live.sample;
 
 final public class Config {
 	// Check out http://go.microsoft.com/fwlink/p/?LinkId=193157 to get your own client id
-    public static final String CLIENT_ID = "0000000048122D4E"; 
+    public static final String CLIENT_ID = "0000000000000000";
 
     // Available options to determine security level of access
     public static final String[] SCOPES = {

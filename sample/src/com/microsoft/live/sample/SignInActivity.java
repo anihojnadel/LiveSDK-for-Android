@@ -72,7 +72,7 @@ public class SignInActivity extends Activity {
         mNeedIdButton = (Button)findViewById(R.id.needIdButton);
 
         // Check to see if the CLIENT_ID has been changed. 
-        if (Config.CLIENT_ID.equals("0000000048122D4E")) {
+        if (Config.CLIENT_ID.equals("0000000000000000")) {
         	 mNeedIdButton.setVisibility(View.VISIBLE);
              mBeginTextViewNeedId.setVisibility(View.VISIBLE);
              mNeedIdButton.setOnClickListener(new View.OnClickListener() {

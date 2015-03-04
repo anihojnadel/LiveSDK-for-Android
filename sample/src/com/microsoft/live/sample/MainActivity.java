@@ -39,9 +39,7 @@ import com.microsoft.live.LiveAuthException;
 import com.microsoft.live.LiveAuthListener;
 import com.microsoft.live.LiveConnectSession;
 import com.microsoft.live.LiveStatus;
-import com.microsoft.live.sample.hotmail.ContactsActivity;
 import com.microsoft.live.sample.identity.ViewProfileActivity;
-import com.microsoft.live.sample.skydrive.SkyDriveActivity;
 
 public class MainActivity extends TabActivity {
     private static final int DIALOG_LOGOUT_ID = 0;
@@ -62,14 +60,6 @@ public class MainActivity extends TabActivity {
 
         intent = new Intent(this, ViewProfileActivity.class);
         spec = tabHost.newTabSpec("profile").setIndicator("Profile").setContent(intent);
-        tabHost.addTab(spec);
-
-        intent = new Intent(this, ContactsActivity.class);
-        spec = tabHost.newTabSpec("contacts").setIndicator("Contacts").setContent(intent);
-        tabHost.addTab(spec);
-
-        intent = new Intent(this, SkyDriveActivity.class);
-        spec = tabHost.newTabSpec("skydrive").setIndicator("SkyDrive").setContent(intent);
         tabHost.addTab(spec);
 
         intent = new Intent(this, ExplorerActivity.class);
